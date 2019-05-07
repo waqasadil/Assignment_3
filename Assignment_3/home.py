@@ -18,6 +18,7 @@ JINJA_ENVIRONMENT = jinja2.Environment(
 )
 
 
+
 class Home(webapp2.RequestHandler):
     def get(self):
         template_values = UserAuth(self.request.uri).userTemplateVals()

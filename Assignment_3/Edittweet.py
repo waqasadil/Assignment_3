@@ -14,6 +14,7 @@ JINJA_ENVIRONMENT = jinja2.Environment(
 )
 
 
+
 class Edittweet(webapp2.RequestHandler):
     def get(self):
         template_values = UserAuth(self.request.uri).userTemplateVals()

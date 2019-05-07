@@ -13,6 +13,7 @@ JINJA_ENVIRONMENT = jinja2.Environment(
 )
 
 
+
 class EditUserProfile(webapp2.RequestHandler):
     def get(self):
         template_values = UserAuth(self.request.uri).userTemplateVals()
