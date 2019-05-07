@@ -1,0 +1,566 @@
+<head>
+  <meta charset="UTF-8">
+  
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  
+<div class="navbar navbar-default navbar-static-top">
+	<div class="container">
+		<div class="navbar-collapse navbar-collapse-1 collapse" aria-expanded="true">
+			<ul class="nav navbar-nav">
+				<li class="active">
+					<a href="/"><span class="glyphicon glyphicon-home"></span> Home</a>
+				</li>
+
+
+
+
+
+				<li>
+					<a href="/search-user"><span class="glyphicon glyphicon-user"></span> Search User</a>
+				</li>
+
+        
+
+				<li>
+					<a href="/search-content"><span class="glyphicon glyphicon-list-alt"></span> Search Content</a>
+				</li>
+				<li>
+				{% if username: %}
+					<a href="/profile"><span class="glyphicon glyphicon-user"></span> Profile</a>{% endif %}
+				</li>
+
+        <li>
+          <a href="{{url}}"><span class="glyphicon glyphicon-off"></span> Logout</a>
+        </li>
+			</ul>
+			<div class="navbar-form navbar-right">
+				<div class="form-group has-feedback">
+					<input type="text" class="form-control-nav" id="search" aria-describedby="search1">
+					<span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
+				</div>
+
+				
+				
+				
+					
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet' href='http://cdn.jsdelivr.net/jquery.magnific-popup/1.0.0/magnific-popup.css'>
+
+      <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      html,
+
+h2 {
+  font-size:18px;
+  margin-bottom:10px;
+}
+p {
+  font-size:12px;
+}
+a {
+  color:inherit;
+  text-decoration:none;
+}
+
+.btn {
+  padding: 14px 20px;
+  display: table;
+  color: white;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+  transition: 0.6s all;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
+}
+
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 40px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
+  transition: 1s all;
+}
+
+.mfp-bg {}
+
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+
+/* overlay animate in */
+
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+
+
+/* overlay animate out */
+
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  transition: all 0.4s ease-out;
+}
+
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+
+<style>
+	
+
+h2 {
+  font-size:18px;
+  margin-bottom:10px;
+}
+p {
+  font-size:12px;
+}
+a {
+  color:inherit;
+  text-decoration:none;
+}
+
+
+
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 40px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
+  transition: 1s all;
+}
+
+.mfp-bg {}
+
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+
+/* overlay animate in */
+
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+
+
+/* overlay animate out */
+
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  transition: all 0.4s ease-out;
+}
+
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
+	</style>
+
+
+  
+<a href="#test-popup" class="btn open-popup-link btn-primary" ><span class="glyphicon glyphicon-pencil" aria-hidden="true"> </span>  Tweet</a>
+  <script src='http://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='http://cdn.jsdelivr.net/jquery.magnific-popup/1.0.0/jquery.magnific-popup.min.js'></script>
+
+  
+
+    <script>
+	$('.open-popup-link').magnificPopup({
+  type: 'inline',
+  midClick: true,
+  mainClass: 'mfp-fade'
+});
+	</script>
+
+
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-3">
+			
+
+		</div>
+		<div class="col-sm-6">
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<div class="media">
+						<a class="media-left" href="#fake">
+							<img alt="" class="media-object img-rounded" src="http://placehold.it/35x35">
+						</a>
+						<div class="media-body">
+							<div class="form-group has-feedback">
+								<label class="control-label sr-only" for="inputSuccess5">Hidden label</label>
+								
+								<span id="search2" class="sr-only">(success)</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel-body">
+					<div class="media">
+						
+						<div class="media-body">
+						
+			
+{% extends 'HTML/base.html' %}
+{% block title %} Home {% endblock %}
+{% block head %}
+    {{ super() }}
+{%  endblock %}
+{% block body %}
+		
+    {% if err_msg: %}
+        <div  class="alert alert-danger" role="alert">
+            {{err_msg}}
+        </div>
+    {% endif %}
+    
+    <div id="test-popup" class="white-popup mfp-hide" style="padding: 10px; border-radius: 5px;background-color:#9EE3B5">
+ 
+    <div class="row">
+        <form method="post" action="{{upload_url}}" enctype="multipart/form-data" class="col-md-12">
+           <label for="tweet_content" style="font-size: 20px; margin-left: 100px;">Compose new Tweet</label><br>
+            <div class="row" style="border: 2px solid #45AF72;background-color: white; margin: 0px;
+  border-radius: 5px;">
+               <br>
+                <div class="form-group col-md-12">
+                    
+                    <textarea class="form-control" rows="3" id="tweet_content" placeholder="Whats Happning?" name="tweet_content">{{tweets_content}}</textarea>
+                </div>
+                <div class="form-group col-md-6">
+                   
+                   
+ <style>
+
+.imagePreview {
+    width: 100%;
+    height: 100px;
+    background-position: center center;
+  background:url(http://cliquecities.com/assets/no-image-e3699ae23f866f6cbdf8ba2443ee5c4e.jpg);
+  background-color:#fff;
+    background-size: cover;
+  background-repeat:no-repeat;
+    display: inline-block;
+  box-shadow:0px -3px 6px 2px rgba(0,0,0,0.2);
+}
+.btn-primary
+{
+  display:block;
+  border-radius:0px;
+  box-shadow:0px 4px 6px 2px rgba(0,0,0,0.2);
+  margin-top:-5px;
+}
+.imgUp
+{
+  margin-bottom:15px;
+}
+.del
+{
+  position:absolute;
+  top:0px;
+  right:15px;
+  width:30px;
+  height:30px;
+  text-align:center;
+  line-height:30px;
+  background-color:rgba(255,255,255,0.6);
+  cursor:pointer;
+}
+.imgAdd
+{
+  width:30px;
+  height:30px;
+  border-radius:50%;
+  background-color:#4bd7ef;
+  color:#fff;
+  box-shadow:0px 0px 2px 1px rgba(0,0,0,0.2);
+  text-align:center;
+  line-height:30px;
+  margin-top:0px;
+  cursor:pointer;
+  font-size:15px;
+}
+</style>
+  
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+     
+
+  
+
+
+  <div class="container">
+  <div class="row" style=" margin-left: -30px;">
+  <div class="col-sm-2 imgUp" style="width: 150px;" >
+    <div class="imagePreview"></div>
+<label class="btn btn-primary">
+										    			Upload<input type="file" accept="image/x-png,image/gif,image/jpeg" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;" name="tweet_image">
+				</label>
+  </div><!-- col-2 -->
+  <i class="fa fa-plus imgAdd"></i>
+ </div><!-- row -->
+</div><!-- container -->
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+
+  
+
+   <script>
+$(".imgAdd").click(function(){
+  $(this).closest(".row").find('.imgAdd').before('<div class="col-sm-2 imgUp"><div class="imagePreview"></div><label class="btn btn-primary">Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width:0px;height:0px;overflow:hidden;"></label><i class="fa fa-times del"></i></div>');
+});
+$(document).on("click", "i.del" , function() {
+	$(this).parent().remove();
+});
+$(function() {
+    $(document).on("change",".uploadFile", function()
+    {
+    		var uploadFile = $(this);
+        var files = !!this.files ? this.files : [];
+        if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
+ 
+        if (/^image/.test( files[0].type)){ // only image file
+            var reader = new FileReader(); // instance of the FileReader
+            reader.readAsDataURL(files[0]); // read the local file
+ 
+            reader.onloadend = function(){ // set image data as background of div
+                //alert(uploadFile.closest(".upimage").find('.imagePreview').length);
+uploadFile.closest(".imgUp").find('.imagePreview').css("background-image", "url("+this.result+")");
+            }
+        }
+      
+    });
+});
+</script>
+
+
+
+
+
+                    
+                </div>
+                
+            </div>
+            <div class="form-group col-md-6 text-right">
+                    <input type="submit" name="button" class="btn btn-primary mb-2" style="margin-left: 400px; margin-top: 10px" value="Tweet"/>
+                </div>
+        </form>
+    </div>
+</div>
+   
+
+			 {% if tweets|length > 0: %}
+        {% for tweet in tweets %}
+           <div style="margin-left: 80px;"><a class="media-left" href="#fake">
+							<img alt="" class="media-object img-rounded" src="http://placehold.it/64x64" style="position: absolute; margin-left: -90px;margin-top: 10px; border: solid">
+						</a>
+            <div class="row" style="border:solid; border-color: aquamarine; width: 440px;border-radius: 5px;padding: 5px">
+              
+               <span style="margin-left: 230px;position: absolute"> {{tweet.updated_date}}</span>
+                <div class="col-md-12">
+                  <h4 class="media-heading"><b>{{tweet.user_name}}</b> </h4> 
+                    
+                   
+                
+                </div>
+                <div class="col-md-12">
+                    {{tweet.tweet_content}}
+                </div>
+                
+                {% if tweet.tweet_image_url %}
+                    <div >
+                        <img src="{{tweet.tweet_image_url}}" style="width: 400px;margin-left: 15px">
+                    </div>
+                {% endif %}
+                {% if username == tweet.user_name %}
+                   <br>
+                    <div class="col-md-12" style="position: absolute;margin-left: 280px;  margin-top: -10px;">
+                        <form action="/home?tweet_id={{tweet.key.id()}}" method="post">
+                            <a class="btn btn-success" href="/tweet-edit?id={{tweet.key.id()}}">Edit</a>
+                            <input type="submit" name="button" class="btn btn-primary mb-2" value="Delete" style="margin-top: 0px;position: absolutex"/>
+                        </form>
+                        
+                        
+                        
+                    </div><br><br>
+                {% endif %}
+            </div>
+            <br></div>
+        {% endfor %}
+    {% endif%}
+{% endblock %}
+
+
+
+							
+							<p>Dolorem aspernatur rerum, iure? Culpa iste aperiam sequi, fuga, quasi rerum, eum, quo natus tenetur officia placeat.</p>
+							<ul class="nav nav-pills nav-pills-custom">
+								<li><a href="#"><span class="glyphicon glyphicon-share-alt"></span></a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-retweet"></span></a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-star"></span></a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-option-horizontal"></span></a></li>
+							</ul>
+						</div>
+					</div>
+
+				
+
+				</div>
+			</div>
+
+			<br>
+			<br>
+			<br>
+
+
+			<div class="panel panel-default">
+				<div class="panel-heading">Prova</div>
+				<div class="panel-body">
+					<ul class="nav nav-pills">
+						<li role="presentation" class="active"><a href="#">Home</a></li>
+						<li role="presentation"><a href="#">Profile</a></li>
+						<li role="presentation"><a href="#">Messages</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-3">
+			<div class="panel panel-default panel-custom">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Who to follow
+						<small><a href="#">Refresh</a> ● <a href="#">View all</a></small>
+					</h3>
+				</div>
+				<div class="panel-body">
+					<div class="media">
+						<div class="media-left">
+							<img src="http://placehold.it/32x32" alt="" class="media-object img-rounded">
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">Nome e cognome</h4>
+							<a href="#" class="btn btn-default btn-xs">
+								+
+								<span class="glyphicon glyphicon-user"></span>
+								Follow
+							</a>
+						</div>
+					</div>
+					<div class="media">
+						<div class="media-left">
+							<img src="http://placehold.it/32x32" alt="" class="media-object img-rounded">
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">Nome e cognome</h4>
+							<a href="#" class="btn btn-default btn-xs">
+								+
+								<span class="glyphicon glyphicon-user"></span>
+								Follow
+							</a>
+						</div>
+					</div>
+					<div class="media">
+						<div class="media-left">
+							<img src="http://placehold.it/32x32" alt="" class="media-object img-rounded">
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">Nome e cognome</h4>
+							<a href="#" class="btn btn-default btn-xs">
+								+
+								<span class="glyphicon glyphicon-user"></span>
+								Follow
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="panel-footer">
+					<a href="www.google.it">
+						<span class="glyphicon glyphicon-user"></span>
+						Find people you know
+					</a>
+				</div>
+			</div>
+			<div class="well well-sm">
+				<ul class="list-inline">
+					<li>© 2015 Twitter</li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Help</a></li>
+					<li><a href="#">Terms</a></li>
+					<li><a href="#">Privacy</a></li>
+					<li><a href="#">Cookies</a></li>
+					<li><a href="#">Ads info</a></li>
+					<li><a href="#">Brand</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Status</a></li>
+					<li><a href="#">Apps</a></li>
+					<li><a href="#">Jobs</a></li>
+					<li><a href="#">Advertise</a></li>
+					<li><a href="#">Businesses</a></li>
+					<li><a href="#">Media</a></li>
+					<li><a href="#">Developers</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+  
+  
+
+</body>
+
+
+
+

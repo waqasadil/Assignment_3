@@ -1,0 +1,72 @@
+<html>
+    <head>
+     
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <style>
+		.container {
+			position: relative;
+		}
+		.topright {
+			position: fixed;
+			top: 8px;
+			right: 16px;
+		}
+		</style>
+		<meta charset="utf-8"/>
+        <meta charset="utf-8"/>
+
+        {% block head%}
+            <title>
+                {% block title %}
+                {% endblock %}
+            </title>
+        {% endblock %}
+    </head>
+    <body>
+        <div>
+            {% if user %}
+
+                    
+
+                    
+                        {% if username: %}
+                            
+                        {% endif %}
+                        
+                       
+
+                   
+                </nav>
+            {% else %}
+
+                <div class="container">
+                    <div>
+                      <form action="/" method="post">
+                        
+
+                    </div>
+                    <div class="form">
+              		<div class="tab-content">
+              		 <div id="signup">
+                     <div align="center" style="  margin: auto;  width: 50%;  border: 3px solid green;  padding: 10px;border-radius: 2px; border-color: aqua; border-style: double;">
+  <h2 align="center"> Assignment # 3
+  </h2>
+  
+    <a class="btn btn-info" href='{{ url }}'>Login 
+    </a>
+</div>
+              			 <form action="" method="post">
+              			 </form>
+              		 </div>
+                </div>
+            {% endif %}
+        </div>
+        <div class="container">
+            {% if user %}
+                {% block body %}{% endblock %}
+            {% endif %}
+        </div>
+    </body>
+</html>
+
+

@@ -1,0 +1,296 @@
+<head>
+  <meta charset="UTF-8">
+  
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  
+<div class="navbar navbar-default navbar-static-top">
+    <div class="container">
+        <div class="navbar-collapse navbar-collapse-1 collapse" aria-expanded="true">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="/"><span class="glyphicon glyphicon-home"></span> Home</a>
+                </li>
+
+
+
+
+
+                <li>
+                    <a href="/search-user"><span class="glyphicon glyphicon-user"></span> Search User</a>
+                </li>
+
+        
+
+                <li>
+                    <a href="/search-content"><span class="glyphicon glyphicon-list-alt"></span> Search Content</a>
+                </li>
+                <li>
+                {% if username: %}
+                    <a href="/profile"><span class="glyphicon glyphicon-user"></span> Profile</a>{% endif %}
+                </li>
+
+        <li>
+          <a href="{{url}}"><span class="glyphicon glyphicon-off"></span> Logout</a>
+        </li>
+            </ul>
+            <div class="navbar-form navbar-right">
+                <div class="form-group has-feedback">
+                    <input type="text" class="form-control-nav" id="search" aria-describedby="search1">
+                    <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
+                </div>
+
+                
+                
+                
+                    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet' href='http://cdn.jsdelivr.net/jquery.magnific-popup/1.0.0/magnific-popup.css'>
+
+      <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      html,
+
+h2 {
+  font-size:18px;
+  margin-bottom:10px;
+}
+p {
+  font-size:12px;
+}
+a {
+  color:inherit;
+  text-decoration:none;
+}
+
+.btn {
+  padding: 14px 20px;
+  display: table;
+  color: white;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+  transition: 0.6s all;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
+}
+
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 40px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
+  transition: 1s all;
+}
+
+.mfp-bg {}
+
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+
+/* overlay animate in */
+
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+
+
+/* overlay animate out */
+
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  transition: all 0.4s ease-out;
+}
+
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+
+<style>
+    
+
+h2 {
+  font-size:18px;
+  margin-bottom:10px;
+}
+p {
+  font-size:12px;
+}
+a {
+  color:inherit;
+  text-decoration:none;
+}
+
+
+
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 40px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
+  transition: 1s all;
+}
+
+.mfp-bg {}
+
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+
+/* overlay animate in */
+
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+
+
+/* overlay animate out */
+
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  transition: all 0.4s ease-out;
+}
+
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
+    </style>
+
+
+  
+<a href="#test-popup" class="btn open-popup-link btn-primary" ><span class="glyphicon glyphicon-pencil" aria-hidden="true"> </span>  Tweet</a>
+  <script src='http://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='http://cdn.jsdelivr.net/jquery.magnific-popup/1.0.0/jquery.magnific-popup.min.js'></script>
+
+  
+
+    <script>
+    $('.open-popup-link').magnificPopup({
+  type: 'inline',
+  midClick: true,
+  mainClass: 'mfp-fade'
+});
+    </script>
+
+
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3">
+            
+
+        </div>
+        <div class="col-sm-6">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <div class="media">
+                        <a class="media-left" href="#fake">
+                            <img alt="" class="media-object img-rounded" src="http://placehold.it/35x35">
+                        </a>
+                        <div class="media-body">
+                            <div class="form-group has-feedback">
+                                <label class="control-label sr-only" for="inputSuccess5">Hidden label</label>
+                                
+                                <span id="search2" class="sr-only">(success)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="media">
+                        
+                        <div class="media-body">
+                        
+
+
+{% extends 'HTML/base.html' %}
+{% block title %} Home Page {% endblock %}
+{% block head %}
+    {{ super() }}
+{%  endblock %}
+{% block body %}
+  <div style="width: 500px;>
+  <div >
+        <h2>User Profile</h2>
+    </div>
+    {% if err_msg: %}
+        <div  class="alert alert-danger" role="alert">
+            {{err_msg}}
+        </div>
+    {% endif %}
+    <div class="row">
+        <form method="post" action="/register" class="col-md-12">
+            <div class="row">
+                <div class="form-group col-md-12">
+                  <label for="user_name">UserName:</label> <span>Select Unique UserName.It can not be changed after Regestration</span>
+                    <input type="text" class="form-control" id="user_name" placeholder="UserName" name="userName" value="{{username}}" {% if username %} disabled {%endif%}>
+                    
+                </div>
+                <div class="form-group col-md-12">
+                   <label for="first_name">First Name:</label> 
+                    <input type="text" class="form-control" id="first_name" placeholder="First Name" name="first_name">
+                </div>
+                <div class="form-group col-md-12">
+                 <label for="last_name">Last Name:</label>
+                    <input type="text" class="form-control" id="last_name" placeholder="Last Name" name="last_name">
+                </div>
+                <div class="form-group col-md-12">
+                   <label for="profile">Bio: </label>
+                    <textarea class="form-control" rows="5" cols="5" id="profile" name="user_profile">{{user_profile}}</textarea>
+                </div>
+            </div>
+            <input type="submit" name="button" class="btn btn-primary mb-2" value="Submit"/>
+        </form>
+    </div>
+</div>
+{% endblock %}
